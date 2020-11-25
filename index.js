@@ -70,7 +70,7 @@ const copyFiles = (pathToOriginalDir, pathToFinalDir) => {
         if (counter === fileNames.length) {
           console.log('Файлы записаны')
           if (counter === fileNames.length && program.del) {
-            // Удаляю исходную папку при наличии del
+            // Удаляю исходную папку при наличии команды del
             del(program.folder).then(() => console.log('Исходная папка удалена'))
           }
         }
